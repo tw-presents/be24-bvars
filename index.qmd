@@ -42,13 +42,13 @@ $$ $$
 
 $$ $$
 
-### Lecture Slides [as a Website](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+### Lecture Slides [as a Website](https://tw-presents.github.io/be24-bvars)
 
 ### A Dedicated Reading [Woźniak (2016, AERev)]( https://doi.org/10.1111/1467-8462.12179)
 
-### **Quarto** [document template](https://github.com/bsvars/2024-10-be24-bsvarSIGNs/blob/main/be23-AUdata.qmd) for your own Australian data forecasting
+### **Quarto** [document template](https://github.com/tw-presents/be24-bvars/blob/main/be23-AUdata.qmd) for your own Australian data forecasting
 
-### GitHub [repo](https://github.com/bsvars/2024-10-be24-bsvarSIGNs) to reproduce the slides and results
+### GitHub [repo](https://github.com/tw-presents/be24-bvars) to reproduce the slides and results
 
 ### A [Kahoot!](https://kahoot.it/) Quiz
 
@@ -77,7 +77,7 @@ $$ $$
 :::
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## VAR(p) Model
@@ -101,7 +101,7 @@ y_t &= \mathbf{A}_1 y_{t-1} + \dots + \mathbf{A}_p y_{t-p} + \boldsymbol\mu_0 + 
 :::
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## A Bivariate VAR(2) Model
@@ -125,7 +125,7 @@ Then, the model equation is:
 Perform the matrix multiplications and write out the equations for $y_{1.t}$.
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Three Useful Distributions {background-color="#F500BD"}
@@ -150,7 +150,7 @@ MN_{K\times N}\left( M, Q, P \right) &\propto \exp\left\{ -\frac{1}{2}\text{tr}\
 -   $\text{tr}()$ is a trace of a matrix - a sum of diagonal elements
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Inverse Wishart Distribution
@@ -168,7 +168,7 @@ IW_{N}\left( S, \nu \right) \propto \text{det}(\mathbf\Sigma)^{-\frac{\nu+N+1}{2
 \end{align*}
 ```
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Normal-Inverse Wishart Distribution
@@ -192,7 +192,7 @@ NIW_{K\times N}\left( M,P,S,\nu\right) \propto &\text{det}(\mathbf{\Sigma})^{-(\
 \end{align*}
 ```
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Example: Error Term Distribution
@@ -215,7 +215,7 @@ E|X &\sim MN_{T\times N}\left(\mathbf{0}_{T\times N},\mathbf\Sigma, I_T\right)
 :::
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Example: Univariate *Inverse Wishart* Distribution
@@ -237,7 +237,7 @@ Consider a case where:
 :::
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Bayesian Estimation {background-color="#F500BD"}
@@ -271,7 +271,7 @@ $$ where $K=pN+1$
 :::
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## The model as Predictive Density
@@ -292,7 +292,7 @@ Y|X,\mathbf{A}, \mathbf{\Sigma} &\sim MN_{T\times N}\left(X\mathbf{A},\mathbf{\S
 \end{align*}
 ```
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Likelihood Function
@@ -312,7 +312,7 @@ L\left(\mathbf{A},\mathbf{\Sigma}|Y,X\right)&\propto\text{det}(\mathbf{\Sigma})^
 \end{align*}
 ```
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Likelihood Function as NIW
@@ -337,7 +337,7 @@ L\left( \mathbf{A},\mathbf{\Sigma}|Y,X \right) &= NIW_{K\times N}\left(\widehat{
 \end{align*}
 ```
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Prior Distribution
@@ -361,7 +361,7 @@ p\left( \mathbf{A},\mathbf{\Sigma} \right)
 \end{align*}
 ```
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Posterior Distribution
@@ -385,7 +385,7 @@ p\left( \mathbf{A},\mathbf{\Sigma} |Y,X\right)
 \end{align*}
 ```
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Joint Posterior Distribution
@@ -410,7 +410,7 @@ p(\mathbf{\Sigma}|Y,X) &= IW_N\left( \overline{S}, \overline{\nu} \right)
 \end{align*}
 ```
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Posterior Mean of $\mathbf{A}$
@@ -428,7 +428,7 @@ $$
 [Play with the posterior in an interactive graph](https://rpsychologist.com/d3/bayes/){preview-link="true"}
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Marginal Data Density
@@ -448,7 +448,7 @@ and so is the analytical formula for the *MDD*: $$p(data)$$
 This can be used to our advantage!
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Minnesota and Dummy Observations Prior {background-color="#F500BD"}
@@ -466,7 +466,7 @@ $$    $$ The prior reflects the following stylised facts about macro time series
 -   the effect of other variables lags should be less than that of own lags
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Minnesota Prior
@@ -496,7 +496,7 @@ Set
 $\psi =(\psi_1, \dots, \psi_N)$ have to be chosen (or estimated)
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Minnesota Prior
@@ -523,7 +523,7 @@ for $\quad l = 1+\text{floor}((i-1)/N) \quad\text{and }\quad k = i - (l-1)N$
 $\lambda^2$ has to be chosen (or estimated)
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Dummy Observations Prior
@@ -549,7 +549,7 @@ p\left( \mathbf{A}, \mathbf{\Sigma}|Y^*,X^* \right) &= MNIV_{K\times N}\left( \u
 :::
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Dummy Observations Prior
@@ -571,7 +571,7 @@ $$
 :::
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Dummy Observations Prior
@@ -596,7 +596,7 @@ $$
 :::
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 
@@ -616,7 +616,7 @@ Write out the matrices $Y^*$ and $X^*$ of dimensions $2\times 3$ and $3\times 3$
 
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 
@@ -654,7 +654,7 @@ p\left( \mathbf{A}, \mathbf{\Sigma}|Y^*,X^*,\psi,\lambda,\mu,\delta \right) &= M
 \end{align*}
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Bayesian Estimation for Hierarchical Prior
@@ -670,7 +670,7 @@ p\left( \mathbf{A}, \mathbf{\Sigma}|Y^*,X^*,\psi,\lambda,\mu,\delta \right) &= M
 $$ p(\psi,\lambda,\mu,\delta|data) \propto p(\psi,\lambda,\mu,\delta)p(data|\psi,\lambda,\mu,\delta)$$ - Use an $(N+3)$-variate Student-t distribution as the candidate generating density
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ## Bayesian Estimation for Hierarchical Prior
@@ -693,7 +693,7 @@ p\left( \mathbf{A}, \mathbf{\Sigma}|Y,X, Y^*,X^* \right) &= MNIW_{K\times N}\lef
 Package [**bsvarSIGNs**](https://cran.r-project.org/web/packages/BVAR/index.html) by [Wang & Woźniak (2024)](https://doi.org/10.32614/CRAN.package.bsvarSIGNs) implements this algorithm.
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 
@@ -708,7 +708,7 @@ Package [**bsvarSIGNs**](https://cran.r-project.org/web/packages/BVAR/index.html
 ## The objective of economic forecasting
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 $\left.\right.$
@@ -731,7 +731,7 @@ Summary statistics are also communicated to general audiences.
 ## One-Period Ahead Predictive Density
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ### VAR(p) model.
@@ -752,7 +752,7 @@ y_{t+h}|Y_{t+h-1},\mathbf{A},\mathbf\Sigma &\sim N_N\left(\mathbf{A}_1 y_{t+h-1}
 ## One-Period Ahead Predictive Density
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 $\left.\right.$
@@ -773,7 +773,7 @@ p(y_{T+1}|Y,X) &= \int p(y_{T+1}|Y_{T},\mathbf{A},\mathbf\Sigma) p(\mathbf{A},\m
 ## Sampling from One-Period Ahead Predictive Density
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 $\left.\right.$
@@ -798,7 +798,7 @@ and obtain $\left\{y_{T+1}^{(s)}\right\}_{s=1}^{S}$
 ## $h$-Period Ahead Predictive Density
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 $\left.\right.$
@@ -818,7 +818,7 @@ p(y_{T+2},y_{T+1}|Y,X)
 ## $h$-Period Ahead Predictive Density
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 $\left.\right.$
@@ -855,7 +855,7 @@ $$ $$
 
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 
@@ -873,7 +873,7 @@ $$ $$
 ## Data preparation
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ```{r}
@@ -912,7 +912,7 @@ plot.ts(
 ## Prior setup
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ```{r}
@@ -946,7 +946,7 @@ mh      = bv_metropolis(
 ## Estimation
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ```{r}
@@ -973,7 +973,7 @@ run   = bvar(
 ## Forecasting
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ```{r}
@@ -1003,7 +1003,7 @@ plot(
 ## Forecasting
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ```{r}
@@ -1027,7 +1027,7 @@ plot(
 ## Forecasting
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ```{r}
@@ -1052,7 +1052,7 @@ plot(
 ## Forecasting
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ```{r}
@@ -1099,7 +1099,7 @@ lines(f4.l1, lwd=2, col="black")
 ## MCMC convergence for hyper-parameters
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ```{r}
@@ -1115,7 +1115,7 @@ plot.ts(run$hyper, main = "", col = "#F500BD", xlab = "s", cex.lab = 2, cex.axis
 ## MCMC convergence for $\mathbf\Sigma_{\cdot1}$
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ```{r}
@@ -1131,7 +1131,7 @@ plot.ts(run$sigma[,1,], main = "", col = "#F500BD", xlab = "s", cex.lab = 2, cex
 ## MCMC convergence for $\boldsymbol\mu_0$
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ```{r}
@@ -1147,7 +1147,7 @@ plot.ts(run$beta[,1,], main = "", col = "#F500BD", xlab = "s", cex.lab = 2, cex.
 ## Posterior means for $\mathbf{A}$
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ```{r}
@@ -1166,7 +1166,7 @@ knitr::kable(mean_A, caption = "Posterior estimates for autoregressive parameter
 ## Posterior means for $\mathbf\Sigma$
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ```{r}
@@ -1185,7 +1185,7 @@ knitr::kable(mean_S, caption = "Posterior estimates for covariance", digits = 5)
 ## Posterior means for hyper-parameters
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 ```{r}
@@ -1204,7 +1204,7 @@ knitr::kable(mean_h, caption = "Posterior estimates for hyper-parameters", digit
 ## Australian Data Forecasting
 
 ::: footer
-[Bayesian VARs](https://bsvars.github.io/2024-10-be24-bsvarSIGNs)
+[Bayesian VARs](https://tw-presents.github.io/be24-bvars)
 :::
 
 $$ $$
